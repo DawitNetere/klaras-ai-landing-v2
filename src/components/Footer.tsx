@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-sm text-gray-600">
-            © 2024 Klaras AI. All rights reserved.
+            © 2025 Klaras AI. All rights reserved.
           </div>
           
           <div className="flex items-center gap-8 text-sm">

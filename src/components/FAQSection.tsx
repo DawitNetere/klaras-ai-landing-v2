@@ -13,7 +13,7 @@ const FAQSection = () => {
     },
     {
       question: "Which tools do you integrate with?",
-      answer: "We plan to support major banks and accounting platforms (QuickBooks, Xero, etc.). Tell us your stack when you join the waitlist."
+      answer: "We plan to support major banks and accounting platforms (QuickBooks, Xero, etc.). Tell us your stack and we'll integrate in a matter of days."
     },
     {
       question: "Is my data secure?",
