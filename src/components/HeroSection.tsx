@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div className="flex justify-center mb-8 md:mb-10 animate-fade-in-up">
           <div className="bg-success/10 text-success border border-success/30 px-6 py-3 rounded-full text-sm font-medium flex items-center gap-2">
             Backed by
-            <img src={googleForStartupsLogo} alt="Google for Startups" className="h-4" />
+            <img src={googleForStartupsLogo} alt="Google for Startups logo - Klaras AI is backed by Google for Startups" className="h-4" />
           </div>
         </div>
 
