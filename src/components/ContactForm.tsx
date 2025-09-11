@@ -8,7 +8,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Mail, X, CheckCircle, AlertCircle } from "lucide-react";
-import { submitContactForm } from "@/lib/supabase";
 
 interface ContactFormProps {
   children: React.ReactNode;
@@ -46,7 +45,24 @@ const ContactForm = ({ children }: ContactFormProps) => {
     setErrorMessage('');
 
     try {
-      await submitContactForm(formData);
+      // Create FormData for Netlify Forms
+      const netlifyFormData = new FormData();
+      netlifyFormData.append('form-name', 'contact');
+      netlifyFormData.append('name', formData.name);
+      netlifyFormData.append('email', formData.email);
+      netlifyFormData.append('subject', formData.subject);
+      netlifyFormData.append('message', formData.message);
+
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(netlifyFormData as any).toString()
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
       setSubmitStatus('success');
       
       // Reset form after successful submission
@@ -86,7 +102,13 @@ const ContactForm = ({ children }: ContactFormProps) => {
           </p>
         </DialogHeader>
         
-        <form onSubmit={handleSubmit} className="p-6 space-y-5">
+        <form onSubmit={handleSubmit} className="p-6 space-y-5" name="contact" data-netlify="true" netlify-honeypot="bot-field">
+          {/* Hidden field for Netlify Forms */}
+          <input type="hidden" name="form-name" value="contact" />
+          {/* Honeypot field */}
+          <div style={{ display: 'none' }}>
+            <input name="bot-field" />
+          </div>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-800 mb-1.5">
