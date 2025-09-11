@@ -4,7 +4,7 @@ import googleForStartupsLogo from "@/assets/Google_for_Startups_logo.svg";
 
 const HeroSection = () => {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 bg-background">
+    <section className="relative pt-24 md:pt-32 lg:pt-40 pb-16 md:pb-24 lg:pb-32 bg-background">
       <div className="container mx-auto px-8 md:px-12 lg:px-16 text-center max-w-6xl">
         {/* Social proof badge */}
         <div className="flex justify-center mb-8 md:mb-10 animate-fade-in-up">

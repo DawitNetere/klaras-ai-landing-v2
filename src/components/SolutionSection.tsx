@@ -26,8 +26,8 @@ const SolutionSection = () => {
   ];
 
   return (
-    <section className="py-32 bg-background border-t border-border/30">
-      <div className="container mx-auto px-6 max-w-5xl">
+    <section className="py-20 md:py-32 bg-background border-t border-border/30">
+      <div className="container mx-auto px-8 md:px-12 max-w-6xl">
         <div className="text-center mb-20 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-text-primary mb-8 leading-tight">
             Meet <span className="text-primary">Klaras AI</span> — your bookkeeper powered by{" "}
@@ -35,19 +35,23 @@ const SolutionSection = () => {
           </h2>
         </div>
 
-        <div className="space-y-10 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-6 mb-16 max-w-4xl mx-auto">
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="flex items-start gap-6 animate-scale-in"
+              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-scale-in border border-gray-100"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex-shrink-0 mt-1">
-                <feature.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center">
+                    <feature.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+                  </div>
+                </div>
+                <p className="text-lg text-text-primary leading-relaxed pt-2">
+                  {feature.text}
+                </p>
               </div>
-              <p className="text-xl text-text-primary leading-relaxed">
-                {feature.text}
-              </p>
             </div>
           ))}
         </div>
