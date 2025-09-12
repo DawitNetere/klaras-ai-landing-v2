@@ -14,7 +14,7 @@ const PricingTeaserSection = () => {
               Simple, transparent pricing for founders and small businesses. No hidden fees.
             </p>
 
-            <Button variant="hero" className="text-lg mb-16" asChild>
+            <Button variant="hero" className="text-xl md:text-2xl font-bold px-12 md:px-16 py-6 md:py-7 mb-16" asChild>
               <a href="https://cal.com/klaras/30min" target="_blank" rel="noopener noreferrer">
                 Book a Demo
               </a>

@@ -28,7 +28,7 @@ const PricingSection = () => {
           </div>
 
           <div className="mb-16 animate-fade-in-up">
-            <Button className="bg-white text-blue-600 hover:bg-blue-50 text-lg font-semibold px-8 py-3" asChild>
+            <Button className="bg-white text-blue-600 hover:bg-blue-50 text-xl md:text-2xl font-bold px-12 md:px-16 py-6 md:py-7" asChild>
               <a href="https://cal.com/klaras/30min" target="_blank" rel="noopener noreferrer">
                 Book a Demo
               </a>

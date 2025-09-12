@@ -57,7 +57,7 @@ const SolutionSection = () => {
         </div>
 
         <div className="text-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          <Button variant="hero" className="text-lg" asChild>
+          <Button variant="hero" className="text-xl md:text-2xl font-bold px-12 md:px-16 py-6 md:py-7" asChild>
             <a href="https://cal.com/klaras/30min" target="_blank" rel="noopener noreferrer">
               Book a Demo
             </a>
