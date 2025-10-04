@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 const Navigation = () => {
@@ -9,7 +10,18 @@ const Navigation = () => {
           <Logo />
           
           <div className="hidden md:flex items-center gap-8">
-            {/* Navigation items removed */}
+            <Link 
+              to="/" 
+              className="text-text-secondary hover:text-text-primary transition-colors font-medium"
+            >
+              Home
+            </Link>
+            <Link 
+              to="/about" 
+              className="text-text-secondary hover:text-text-primary transition-colors font-medium"
+            >
+              About Us
+            </Link>
           </div>
 
           <Button 
