@@ -1,12 +1,11 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
-import PricingTeaserSection from "@/components/PricingTeaserSection";
-import CredibilitySection from "@/components/CredibilitySection";
-import PricingSection from "@/components/PricingSection";
-import FAQSection from "@/components/FAQSection";
+import AIWorkflowSection from "@/components/AIWorkflowSection";
+import ProblemSolutionSection from "@/components/ProblemSolutionSection";
+import IntegrationsSection from "@/components/IntegrationsSection";
+import WhatYouGetSection from "@/components/WhatYouGetSection";
+import TrustSecuritySection from "@/components/TrustSecuritySection";
+import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,13 +13,12 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
-      <ProblemSection />
-      <SolutionSection />
-      <HowItWorksSection />
-      <PricingTeaserSection />
-      <CredibilitySection />
-      <FAQSection />
-      <PricingSection />
+      <ProblemSolutionSection />
+      <AIWorkflowSection />
+      <WhatYouGetSection />
+      <IntegrationsSection />
+      <TrustSecuritySection />
+      <FinalCTASection />
       <Footer />
     </main>
   );

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Klaras AI Design System - All colors, gradients, fonts, etc. 
+/* Claras AI Design System - All colors, gradients, fonts, etc. 
 All colors MUST be HSL as per brand guidelines.
 */
 
@@ -17,7 +17,7 @@ All colors MUST be HSL as per brand guidelines.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 12%;
 
-    /* Klaras AI Brand Colors */
+    /* Claras AI Brand Colors */
     --primary: 214 84% 56%; /* #4F7CFF - Primary blue */
     --primary-hover: 214 90% 52%; /* #3B6EFF - Darker blue for hover */
     --primary-foreground: 0 0% 100%; /* White text on primary */

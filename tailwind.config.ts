@@ -131,6 +131,14 @@ export default {
           "50%": {
             transform: "translateY(-10px)"
           }
+        },
+        "scroll": {
+          "0%": {
+            transform: "translateX(0)"
+          },
+          "100%": {
+            transform: "translateX(calc(-50% - 1.5rem))"
+          }
         }
       },
       animation: {
@@ -139,6 +147,7 @@ export default {
         "fade-in-up": "fade-in-up 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
         "scale-in": "scale-in 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
         "float": "float 3s ease-in-out infinite",
+        "scroll": "scroll 25s linear infinite",
       },
     },
   },

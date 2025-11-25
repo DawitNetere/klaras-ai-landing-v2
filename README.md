@@ -1,76 +1,73 @@
-# Klaras AI Landing Page
+# Claras AI Landing Page
 
 ## Project Description
 
-This is the official landing page for Klaras AI - an AI-powered bookkeeping service for founders and startups. The platform automates 60% of accounting workflows using AI agents, with expert accountant oversight.
+Official landing page for **ClarasAI** - Full-Service AI Accounting, Backed by Expert Accountants. We combine advanced AI automation with in-house accountants to deliver fast, accurate, end-to-end accounting for modern businesses.
+
+**Website:** [clarasai.com](https://www.clarasai.com)
+
+## Pages
+
+- **Home** (`/`) - Main landing page with hero, features, and CTAs
+- **Product** (`/product`) - AI accounting features and capabilities
+- **Pricing** (`/pricing`) - Pricing plans and comparison
+- **About** (`/about`) - Team and company information
+- **Contact** (`/contact`) - Contact form and Cal.com booking
+- **Privacy Policy** (`/privacy`) - Privacy policy
+- **Terms of Service** (`/terms`) - Terms of service
 
 ## Features
 
 - Modern React + TypeScript application
 - Tailwind CSS for styling
 - Responsive design
-- Interactive contact forms and privacy policy modals
-- Calendly integration for demo bookings
+- Interactive AI workflow demonstrations
+- Invoice automation with animated process visualization
+- Real-time financial dashboards
+- Automated reconciliation features
+- Cal.com integration for demo bookings
+- SEO optimized with meta tags and sitemap
 
 ## Development
 
-To run the project locally:
-
 ```bash
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
 The application will be available at `http://localhost:8080`
 
-Follow these steps:
+## Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Framework:** React 18 + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Routing:** React Router
+- **Scheduling:** Cal.com Embed
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/     # Reusable UI components
+│   ├── ui/         # shadcn/ui components
+│   └── ...         # Custom section components
+├── pages/          # Page components
+├── hooks/          # Custom React hooks
+├── lib/            # Utility functions
+└── assets/         # Images and static files
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/491a662f-bbba-461c-b187-30556030ba46) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Build the project and deploy the `dist` folder to any static hosting provider (Netlify, Vercel, etc.).
