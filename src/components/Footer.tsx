@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-gray-400 text-center md:text-left">
-            <div>© 2025 ClarasAI, Inc. All rights reserved.</div>
+            <div>© 2025 KlarasAI, Inc. All rights reserved.</div>
             <div className="mt-1">131 Continental Dr Suite 305 Newark, DE, 19713 US</div>
           </div>
           
