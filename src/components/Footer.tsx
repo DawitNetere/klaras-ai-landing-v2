@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="md:col-span-1">
-            <Logo className="mb-4" />
+            <Logo className="mb-4" variant="light" />
             <p className="text-gray-400 text-sm leading-relaxed">
               AI-powered accounting backed by expert accountants for modern businesses.
             </p>
