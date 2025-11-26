@@ -4,7 +4,10 @@ import { useState } from "react";
 import { ChevronDown, Loader2, CheckCircle } from "lucide-react";
 import aizenLogo from "@/assets/testomonial logos/AIzen logo.jpeg";
 import adgrowLogo from "@/assets/testomonial logos/adgrow logo.png";
-import haipLogo from "@/assets/testomonial logos/haip logo.jpeg";
+import learngoLogo from "@/assets/testomonial logos/Learngo - Logo.png";
+import mobitouchLogo from "@/assets/testomonial logos/mobitouch_logo_kolor_L.png";
+import drMaciejLogo from "@/assets/testomonial logos/dr maciej logo.png";
+import brixellsLogo from "@/assets/testomonial logos/brixells-logo-new-XdaqXzC5.png";
 
 const HeroSection = () => {
   const [email, setEmail] = useState("");
@@ -113,7 +116,10 @@ const HeroSection = () => {
                 <div key={i} className="flex gap-16 shrink-0">
                   <img src={aizenLogo} alt="AIZEN" className="h-8 md:h-9 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300" />
                   <img src={adgrowLogo} alt="Adgrow" className="h-8 md:h-9 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300" />
-                  <img src={haipLogo} alt="HAIP" className="h-8 md:h-9 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300" />
+                  <img src={learngoLogo} alt="LearnGo" className="h-8 md:h-9 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300" />
+                  <img src={mobitouchLogo} alt="Mobitouch" className="h-8 md:h-9 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300" />
+                  <img src={drMaciejLogo} alt="Dr Maciej" className="h-8 md:h-9 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300" />
+                  <img src={brixellsLogo} alt="Brixells" className="h-8 md:h-9 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300" />
                 </div>
               ))}
             </div>
