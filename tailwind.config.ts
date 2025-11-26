@@ -147,7 +147,7 @@ export default {
         "fade-in-up": "fade-in-up 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
         "scale-in": "scale-in 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
         "float": "float 3s ease-in-out infinite",
-        "scroll": "scroll 25s linear infinite",
+        "scroll": "scroll 10s linear infinite",
       },
     },
   },
